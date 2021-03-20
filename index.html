@@ -18,6 +18,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
     />
+
+    <!-- AOS cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" />
+
     <title>Massa | Trenyajor</title>
   </head>
   <body class="text-gray-800 antialiased">
@@ -108,10 +112,10 @@
             class="w-full h-full absolute opacity-75 bg-black"
           ></span>
         </div>
-        <div class="container relative mx-auto">
+        <div class="container relative mx-auto" data-aos="fade-in">
           <div class="items-center flex flex-wrap">
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-              <div class="pr-12">
+              <div>
                 <h1 class="text-white font-semibold text-5xl">
                   Feel the <span class="text-orange-500">Power</span>
                 </h1>
@@ -152,7 +156,7 @@
         
         <div class="container mx-auto px-4">
           <div class="items-center flex flex-wrap">
-            <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+            <div class="w-full md:w-4/12 ml-auto mr-auto px-4" data-aos="fade-right">
               <img
                 alt="..."
                 class="max-w-full rounded-lg shadow-lg"
@@ -160,7 +164,7 @@
                 src="./assets/img/main-2.jpg"
               />
             </div>
-            <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+            <div class="w-full md:w-5/12 ml-auto mr-auto px-4" data-aos="fade-left">
               <div class="md:pr-12">
                 
                 <small class="text-orange-500">About our Gym</small>
@@ -247,7 +251,7 @@
           <div class="flex flex-wrap">
 
             <!-- Card-1 -->
-            <div class="w-full md:w-4/12  lg:mb-0 mb-12 px-4">
+            <div class="w-full md:w-4/12  lg:mb-0 mb-12 px-4" data-aos="flip-right">
               <div class="px-6">
                 <img
                   alt="..."
@@ -266,7 +270,7 @@
             </div>
 
             <!-- Card-2 -->
-            <div class="w-full md:w-4/12  lg:mb-0 mb-12 px-4">
+            <div class="w-full md:w-4/12  lg:mb-0 mb-12 px-4" data-aos="flip-right">
               <div class="px-6">
                 <img
                   alt="..."
@@ -285,7 +289,7 @@
             </div>
 
             <!-- Card-3 -->
-            <div class="w-full md:w-4/12  lg:mb-0 mb-12 px-4">
+            <div class="w-full md:w-4/12  lg:mb-0 mb-12 px-4" data-aos="flip-right">
               <div class="px-6">
                 <img
                   alt="..."
@@ -330,7 +334,7 @@
             ></polygon>
           </svg>
         </div>
-        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64 pb-20 pt-20">
           <div class="flex flex-wrap text-center justify-center">
             <div class="w-full lg:w-6/12 px-4">
               <h2 class="text-4xl font-semibold text-white uppercase">Contact Us</h2>
@@ -477,5 +481,15 @@
       document.getElementById(collapseID).classList.toggle("hidden");
       document.getElementById(collapseID).classList.toggle("block");
     }
+  </script>
+
+  <!-- aos js cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
+  <script>
+    AOS.init({
+      delay:200,
+      duration:1200,
+      once:false
+    })
   </script>
 </html>
